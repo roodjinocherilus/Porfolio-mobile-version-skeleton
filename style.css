@@ -10,12 +10,19 @@
 body {
     font-family: Poppins;
     font-size: 16px;
+    background-image: url(/images/bg-shape.svg);
 }
 nav {
-    background: #222;
+    background: rgb(255, 255, 255);
     padding: 0 15px;
 }
-a {
+a, li {
     color: white;
     text-decoration: none;
+}
+/* Nav Flex */
+ul {
+    display: flex;
+    justify-content: space-between;
+    padding:3vh;
 }
