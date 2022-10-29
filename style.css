@@ -11,6 +11,7 @@ body {
     font-family: Poppins;
     font-size: 16px;
     background-image: url(/images/bg-shape.svg);
+    background-size:auto;
 }
 nav {
     background: rgb(255, 255, 255);
@@ -36,6 +37,7 @@ ul {
 h1 {
     font-size: 3.5em;
     line-height: 0,5em;
+    color: #172B4D;
 }
 
 .connect {
@@ -46,7 +48,16 @@ h1 {
     margin-top:1vh;
 }
 
-.logo > img {
+.logo > a {
     width: 30px;
-    margin:1vh;
+    margin:1.5vh;
 }
+
+.text > p {
+    color: #344563;
+}
+
+.connect > P {
+    color: #7F8CFF;
+    font-size: 1.2 em;
+    }
