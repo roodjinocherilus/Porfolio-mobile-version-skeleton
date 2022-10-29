@@ -149,3 +149,28 @@ button {
   color: #6070ff;
   text-decoration: none;
 }
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lan-items {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: auto;
+  font-size: 1.5em;
+  background-color: #f7f7f9;
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+  gap: 20px;
+  padding: 10px;
+}
+
+.about-stack > p {
+  margin: 20px;
+  font-size: 1.52em;
+}
