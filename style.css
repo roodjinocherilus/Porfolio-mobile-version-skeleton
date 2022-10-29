@@ -40,6 +40,8 @@ ul {
 .container {
   padding: 3vh;
   margin: 1vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -70,3 +72,4 @@ h1 {
   color: #7f8cff;
   font-size: 1.2 em;
 }
+
