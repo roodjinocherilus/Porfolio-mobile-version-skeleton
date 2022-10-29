@@ -37,8 +37,8 @@ Run npx stylelint "**/*.{css,scss}"
 
 👤 **Roodjino Cherilus**
 
-- GitHub: [@githubhandle](https://github.com/roodjinocherilus)
-- Twitter: [@twitterhandle](https://twitter.com/roodjinocherilu)
+- GitHub: [@roodjinocherilus](https://github.com/roodjinocherilus)
+- Twitter: [@roodjinocherilus](https://twitter.com/roodjinocherilu)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/cherilusjcr/)
 
 ## Show your support
