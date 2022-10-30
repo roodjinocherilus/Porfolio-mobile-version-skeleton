@@ -176,3 +176,18 @@ button {
   margin: 20px;
   font-size: 1.52em;
 }
+
+button:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+button:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+button:disabled {
+  color: #5e6c84;
+  border: 1px solid #5e6c84;
+}
