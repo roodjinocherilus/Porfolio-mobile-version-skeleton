@@ -1,6 +1,11 @@
 # Porfolio-mobile-version-skeleton
-Project 1 of the Microverse Porfolio Project.
-It contains the 2 first section of the mobile version
+Project 2 of the Microverse Porfolio Project.
+The task was to create the moible verson of the porfolio.
+It contains:
+- The Nav bar
+- The Homepage (Hero)
+- The Work Section (Portfolio)
+- The About Myself
 
 ## Built With
 

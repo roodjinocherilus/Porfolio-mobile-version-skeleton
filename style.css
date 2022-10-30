@@ -15,6 +15,7 @@ body {
   background-repeat: no-repeat;
 }
 
+a,
 li {
   list-style-type: none;
 }
@@ -22,12 +23,6 @@ li {
 nav {
   background: white;
   padding: 0 15px;
-}
-
-a,
-li {
-  color: white;
-  text-decoration: none;
 }
 
 /* Nav Flex */
@@ -75,4 +70,124 @@ h1 {
 .connect > p {
   color: #7f8cff;
   font-size: 1.2 em;
+}
+
+.work {
+  margin-top: 1vh;
+  display: grid;
+  background: #e5e5e5;
+}
+
+.card-work {
+  border-radius: 5%;
+  background-color: white;
+  border: 1px solid #dfe1e6;
+  margin: 4vh;
+  padding: 3vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3vh;
+  align-items: center;
+  width: 80%;
+}
+
+.project-stack {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 3vh;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.2em;
+  color: #172b4d;
+}
+
+.card-img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-img {
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+}
+
+.bullet {
+  width: 12px;
+  height: 12px;
+  background-color: gray;
+  border-radius: 100%;
+}
+
+.card-text > p {
+  color: #344563;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+.project-stack > li {
+  background-color: #ebebff;
+  padding: 1vh;
+  border-radius: 10px;
+}
+
+button {
+  border: 1px solid #6070ff;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2vh;
+  margin-top: 10px;
+  font-size: 1.8em;
+  color: #6070ff;
+  text-decoration: none;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lan-items {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: auto;
+  font-size: 1.5em;
+  background-color: #f7f7f9;
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+  gap: 20px;
+  padding: 10px;
+}
+
+.lan {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  font-size: 1.52em;
+}
+
+button:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+button:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+button:disabled {
+  color: #5e6c84;
+  border: 1px solid #5e6c84;
 }
