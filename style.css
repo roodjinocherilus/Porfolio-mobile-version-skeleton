@@ -97,10 +97,12 @@ h1 {
 }
 
 .project-stack {
-  display: flex;
-  justify-content: space-between;
   width: 80%;
   margin-bottom: 3vh;
+}
+
+.project-stack > li {
+  float: left;
 }
 
 h2 {
