@@ -103,11 +103,10 @@ h1 {
 
 .project-stack > li {
   float: left;
-  background-color: #ebebff;
+  margin: 1vh;
+  background: #ebebff;
   color: #6070ff;
-  padding: 1vh;
-  border-radius: 10px;
-  margin-right: 2vh;
+  padding: 0.5vh 1vh;
 }
 
 h2 {
