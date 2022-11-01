@@ -1,5 +1,5 @@
 # Porfolio-mobile-version-skeleton
-Personal Porfolio from
+Personal Porfolio from Microverse
 In this repository, with guidance from Microverse, we will create a complete porfolio from sratchg (Mobile and Desktop Version)
 
 ## Built With
@@ -40,6 +40,10 @@ Run npx stylelint "**/*.{css,scss}"
 - GitHub: [@roodjinocherilus](https://github.com/roodjinocherilus)
 - Twitter: [@roodjinocherilus](https://twitter.com/roodjinocherilu)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/cherilusjcr/)
+
+👤 **Emmanuel Cortes**
+
+- GitHub: [@emmanuelcortes2](https://github.com/emmanuelcortes2)
 
 ## Show your support
 
