@@ -1,5 +1,4 @@
 # Porfolio-mobile-version-skeleton
-
 Personal Porfolio from Microverse
 In this repository, with guidance from Microverse, we will create a complete porfolio from sratchg (Mobile and Desktop Version)
 
