@@ -41,6 +41,10 @@ Run npx stylelint "**/*.{css,scss}"
 - Twitter: [@roodjinocherilus](https://twitter.com/roodjinocherilu)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/cherilusjcr/)
 
+👤 **Emmanuel Cortes**
+
+- GitHub: [@emmanuelcortes2](https://github.com/emmanuelcortes2)
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
