@@ -1,11 +1,7 @@
 # Porfolio-mobile-version-skeleton
-Project 2 of the Microverse Porfolio Project.
-The task was to create the moible verson of the porfolio.
-It contains:
-- The Nav bar
-- The Homepage (Hero)
-- The Work Section (Portfolio)
-- The About Myself
+Personal Porfolio from Microverse
+
+In this repository, with guidance from Microverse, we will create a complete porfolio from sratchg (Mobile and Desktop Version)
 
 ## Built With
 
