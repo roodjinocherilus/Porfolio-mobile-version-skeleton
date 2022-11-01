@@ -200,16 +200,25 @@ button:disabled {
 
 form {
   margin: 0 auto;
-  width: 400px;
+  width: 100%;
   padding: 1em;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #6070ff;
+  border-top-left-radius: 75px;
 }
+
 form > p {
-  justify-self: center;
+  text-align: center;
+  color: #fff;
 }
+
+form > h2 {
+  color: #fff;
+}
+
 form > ul {
 display: flex;
 flex-direction: column;
