@@ -57,9 +57,19 @@ h1 {
   display: flex;
 }
 
+form > ul > li {
+  display: flex;
+  width: 80%;
+}
+
 .logo > li {
   width: 30px;
   margin: 1.2vh;
+}
+
+form > p {
+  text-align: center;
+  color: #fff;
 }
 
 .text > p {
@@ -183,6 +193,12 @@ button {
   font-size: 1.52em;
 }
 
+form > button {
+  margin: 15px 10px;
+  width: 100%;
+  height: 30px;
+}
+
 button:hover {
   background-color: #6070ff;
   color: white;
@@ -200,19 +216,16 @@ button:disabled {
 
 form {
   margin: 0 auto;
-  width: 100%;
   padding: 1em;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #6070ff;
+  background: #6070ff;
   border-top-left-radius: 75px;
-}
-
-form > p {
-  text-align: center;
-  color: #fff;
+  background-image: url("/images/bg-shape-mob.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 form > h2 {
@@ -220,33 +233,27 @@ form > h2 {
 }
 
 form > ul {
-display: flex;
-flex-direction: column;
-width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 form > ul > li > input {
-  margin: 15px 10px;
-  width: 100%;
   height: 30px;
+  width: 100%;
 }
 
 form > ul > li > textarea {
-  margin: 15px 10px;
-  width: 100%;
   height: 100px;
+  width: 100%;
 }
 
-form > button {
-  margin: 15px 10px;
-  width: 100%;
-  height: 30px;
-}
-/*
-input {
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 4px;
-  box-sizing: border-box;
+.btn-contact {
+  width: 50%;
+  margin: auto;
+  font-size: 1.2em;
 }

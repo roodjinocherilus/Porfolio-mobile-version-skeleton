@@ -186,7 +186,7 @@
         
 
         </section>
-        <form action="">
+        <form action="https://formspree.io/f/mpznorea" method="post">
             <h2>Contact me</h2>
             <p>If you have an application 
                 you are interested in developing, 
@@ -194,11 +194,11 @@
                 a project that needs coding. 
                 I’d love to help with it </p>
             <ul>
-                <li><input type="text" id="name" name="name" placeholder="Enter your Name"></li>
-                <li><input type="email" id="email" placeholder="Enter your Email"></li>
-                <li><textarea name="textarea" id="message" placeholder="Write your Message here">Write your message here</textarea></li>
-                <li class="button">
-                    <button type="submit">Send your message</button>
+                <li><input type="text" id="name" name="name" placeholder="Enter your Name" required minlength="2" maxlength="30"></li>
+                <li><input type="email" id="email" placeholder="Enter your Email"  minlength="2" required ></li>
+                <li><textarea name="textarea" id="message" placeholder="Write your Message here" required  minlength="2" maxlength="500">Write your message here</textarea></li>
+                <li>
+                    <button class="btn-contact" type="submit" required>Get in touch</button>
                   </li>
             </ul>
            
