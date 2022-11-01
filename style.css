@@ -107,6 +107,7 @@ h1 {
   background: #ebebff;
   color: #6070ff;
   padding: 0.5vh 1vh;
+  border-radius: 5%;
 }
 
 h2 {
@@ -137,6 +138,11 @@ h2 {
   margin-top: 15px;
   margin-bottom: 20px;
   height: auto;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
 }
 
 button {
