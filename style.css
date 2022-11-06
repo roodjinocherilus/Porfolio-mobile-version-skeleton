@@ -212,6 +212,14 @@ button:disabled {
   border: 1px solid #5e6c84;
 }
 
+.form {
+  background: #6070ff;
+  border-top-left-radius: 75px;
+  background-image: url("/images/bg-shape-mob.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+}
 form {
   margin: 0 auto;
   padding: 1em;
@@ -219,12 +227,6 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #6070ff;
-  border-top-left-radius: 75px;
-  background-image: url("/images/bg-shape-mob.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 450px;
 }
 
 form > h2 {
@@ -389,6 +391,10 @@ button {
   margin-left: 1000px;
   margin-right: auto;
   margin-top: 5vh;
+}
+
+form {
+  width: 50%;
 }
 
 }
