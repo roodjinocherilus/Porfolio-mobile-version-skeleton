@@ -35,6 +35,7 @@ nav {
   display: flex;
   flex-direction: column;
   height: 718px;
+  padding: 40px;
 }
 
 .hero {
