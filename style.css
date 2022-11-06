@@ -12,11 +12,12 @@ body {
   font-size: 16px;
 }
 
-a,ß
+a,
 li {
   list-style-type: none;
   text-decoration: none;
 }
+
 nav {
   background: white;
   padding: 0 15px;
@@ -213,6 +214,7 @@ button:disabled {
   background-size: cover;
   height: 450px;
 }
+
 form {
   margin: 0 auto;
   padding: 1em;
@@ -253,141 +255,137 @@ form > textarea {
   }
 }
 
-
-
-
 @media screen and  (min-width: 992px) {
   .menu {
     display: none;
   }
 
-.hero {
-  background-image: url("/images/header-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+  .hero {
+    background-image: url("/images/header-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
-.nav-item {
-  display: flex;
-  justify-content: space-between;
-  gap:25px;
-  
-}
+  .nav-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+  }
 
+  .ml-auto {
+    margin-left: auto;
+  }
 
-.ml-auto {
-  margin-left: auto;
-}
+  .text {
+    margin-top: 200px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.text {
-  margin-top: 200px;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+  .connect {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+  }
 
-}
-.connect {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5vh;
-}
+  .card-work {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
 
-.card-work {
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 20px;
-}
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
 
-.card-img {
-  width: 100%;
-  height: auto;
-}
+  .card-text {
+    margin: auto;
+  }
 
-.card-text {
-  margin:auto;
-}
+  button {
+    border: 1px solid #6070ff;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1vh;
+    margin: auto;
+    font-size: 1em;
+    color: #6070ff;
+    text-decoration: none;
+  }
 
+  .project-stack {
+    width: 80%;
+  }
 
-button {
-  border: 1px solid #6070ff;
-  background-color: white;
-  border-radius: 10px;
-  padding: 1vh;
-  margin: auto;
-  font-size: 1em;
-  color: #6070ff;
-  text-decoration: none;
-}
+  .project-stack > li {
+    float: left;
+    margin: 1vh;
+    margin-left: 0;
+    background: #ebebff;
+    color: #6070ff;
+    padding: 0.5vh 1vh;
+    border-radius: 5%;
+  }
 
-.project-stack {
-  width: 80%;
-}
-.project-stack > li {
-  float: left;
-  margin: 1vh;
-  margin-left: 0;
-  background: #ebebff;
-  color: #6070ff;
-  padding: 0.5vh 1vh;
-  border-radius: 5%;
-}
+  .card-text2 {
+    grid-area: 1 / 1;
+  }
 
-.card-text2 {
-  grid-area: 1 / 1;
-}
+  .card-img2 {
+    grid-area: 1 / 2;
+  }
 
-.card-img2 {
-  grid-area: 1 / 2;
-}
+  .about {
+    display: flex;
+    flex-direction: row;
+  }
 
-.about {
-  display: flex;
-  flex-direction: row;
-}
-.container2 {
-  max-width: 60%;
-}
+  .container2 {
+    max-width: 60%;
+  }
 
-.text-about {
-  margin-top: 100px;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.about-stack{
-  margin-top: 100px;
-}
+  .text-about {
+    margin-top: 100px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.languages
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 20px;
-}
+  .about-stack {
+    margin-top: 100px;
+  }
 
-.lan-items {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
- justify-content: start;
-  height: auto;
-  font-size: 1.2em;
-  background-color: #f7f7f9;
-  width: 10vh;
-  border-radius: 5px;
-  gap: 10px;
-  padding: 10px;
-}
-.connect2 {
-  margin-left: 1000px;
-  margin-right: auto;
-  margin-top: 5vh;
-}
+  .languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
 
-form {
-  width: 50%;
-}
+  .lan-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    height: auto;
+    font-size: 1.2em;
+    background-color: #f7f7f9;
+    width: 10vh;
+    border-radius: 5px;
+    gap: 10px;
+    padding: 10px;
+  }
 
+  .connect2 {
+    margin-left: 1000px;
+    margin-right: auto;
+    margin-top: 5vh;
+  }
+
+  form {
+    width: 50%;
+  }
 }
