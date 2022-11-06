@@ -38,11 +38,12 @@ nav {
 }
 
 .container {
-  padding: 3vh;
-  margin: 1vh;
   display: flex;
   flex-direction: column;
   height: 718px;
+}
+
+.hero {
   background-image: url("/images/header-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -265,7 +266,7 @@ form > textarea {
     display: none;
   }
 
-.container {
+.hero {
   background-image: url("/images/header-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -344,4 +345,50 @@ button {
 .card-img2 {
   grid-area: 1 / 2;
 }
+
+.about {
+  display: flex;
+  flex-direction: row;
+}
+.container2 {
+  max-width: 60%;
+}
+
+.text-about {
+  margin-top: 100px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-stack{
+  margin-top: 100px;
+}
+
+.languages
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.lan-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+ justify-content: start;
+  height: auto;
+  font-size: 1.2em;
+  background-color: #f7f7f9;
+  width: 10vh;
+  border-radius: 5px;
+  gap: 10px;
+  padding: 10px;
+}
+.connect2 {
+  margin-left: 1000px;
+  margin-right: auto;
+  margin-top: 5vh;
+}
+
 }
