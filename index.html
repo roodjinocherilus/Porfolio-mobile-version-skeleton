@@ -17,19 +17,34 @@
                     <li>
                     <a href="#"> <img src="images/logo.svg" alt="logo"> </a>
                     </li>
+                     
+                    <li >
+
+                <ul class="nav-item"> 
+                    <li >
+                        <a href="#"> Portolio </a>
+                        </li> 
                     <li>
+                    <a href="#"> About</a>
+                    </li>
+                    <li >
+                    <a href="#"> Contact </a>
+                     </li>
+                    </ul>
+                </li> 
+                    <li class="menu">
                     <a href="#"> <img src="images/menu.svg" alt="menu"> </a>
                     </li>
-
+                
                 </ul>
             </nav>
 
         </header>
 
-        <section>
+        <section class="hero">
             <div class="container">
                 <div class="text">
-                    <h1>I’m Roodjino Glad to see you!</h1>
+                    <h1>I’m Roodjino, Glad to see you!</h1>
                     <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
                 </div>
                 <div class="connect">
@@ -74,39 +89,43 @@
 
             
             <div class="card-work">
-                <div class="card-img">
-                    <img src="images/portfolio2.png" alt="snapshoot">
-                </div>
-                    
-                <div class="card-text">
+                <div class="card-text card-text2">
                     <h2>Project Title</h2>
                     <ul class="project-details">
                         <li>Canopy</li>
+                        <span class="bullet"></span>
                         <li>Black end Dev</li>
+                        <span class="bullet"></span>
                         <li>2015</li>
                     </ul>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
                     <ul class="project-stack">
                         <li>HTML</li>
+                        <span class="bullet"></span>
                         <li>CSS</li>
+                        <span class="bullet"></span>
                         <li>JavaScript</li>
                     </ul>
                     <a href="#"> <button type="button">See Project</button> </a>
                 </div>
-                
+                <div class="card-img card-img2">
+                    <img src="images/portfolio2.png" alt="snapshoot">
+                </div>
             </div>
 
             
             <div class="card-work">
-                <div class="card-img">
+                <div class="card-img card-img3">
                     <img src="images/portfolio3.png" alt="snapshoot">
                 </div>
                     
-                <div class="card-text">
+                <div class="card-text card-text3">
                     <h2>Project Title</h2>
                     <ul class="project-details">
                         <li>Canopy</li>
+                        <span class="bullet"></span>
                         <li>Black end Dev</li>
+                        <span class="bullet"></span>
                         <li>2015</li>
                     </ul>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
@@ -122,11 +141,9 @@
 
             
             <div class="card-work">
-                <div class="card-img">
-                    <img src="images/portfolio4.png" alt="snapshoot">
-                </div>
+           
                     
-                <div class="card-text">
+                <div class="card-text card-text4">
                     <h2>Project Title</h2>
                     <ul class="project-details">
                         <li>Canopy</li>
@@ -142,6 +159,10 @@
                     <a href="#"> <button type="button">See Project</button> </a>
                 </div>
                 
+
+                <div class="card-img card-img4">
+                    <img src="images/portfolio4.png" alt="snapshoot">
+                </div>
             </div>
 
         </section>
@@ -149,12 +170,12 @@
 
         <section class="about">
 
-            <div class="container">
-                <div class="text">
-                    <h1>I’m Roodjino Glad to see you!</h1>
+            <div class="container container2">
+                <div class="text text-about">
+                    <h1>About Myself</h1>
                     <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
                 </div>
-                <div class="connect">
+                <div class="text-about2">
                     <p> LET'S CONNECT</p>
                     <ul class="logo"> 
                         <li><a href="#"><img src="images/twitter.svg"> </a> </li>
@@ -169,17 +190,17 @@
             <div class="about-stack">
 
                <span class="lan"> <p>Languages</p> <img src="images/hov-dow.png"/> </span>
-
+               <hr>
                 <ul class="languages">
                     <li class="lan-items"><span> <img src="images/js.svg"/></span>JavaScript</li>
                     <li class="lan-items"><span> <img src="images/html.svg"/></span>Html</li>
                     <li class="lan-items"><span> <img src="images/css.svg"/></span>Css</li>
                 </ul>
-
+        <hr>
                 <span class="lan"> <p>Framework</p> <img src="images/hov-down.png"/> </span>
-
+        <hr>
                 <span class="lan">  <p>Skills</p> <img src="images/hov-down.png"/> </span>
-    
+  
 
             </div>
 
@@ -187,7 +208,9 @@
 
         </section>
 
+        <section class="form">
         <form action="https://formspree.io/f/mpznorea" method="post">
+          
             <h2>Contact me</h2>
             <p>If you have an application 
                 you are interested in developing, 
@@ -198,10 +221,10 @@
                 <input type="email" id="email" placeholder="Enter your Email"  minlength="2" required >
                 <textarea name="textarea" id="message" placeholder="Write your Message here" required  minlength="2" maxlength="500"></textarea>
                     <button class="btn-contact" type="submit" required>Get in touch</button>
-           
+                    
         </form>
 
-
+    </section>
 
     </body>
 </html>
