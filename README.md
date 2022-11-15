@@ -9,6 +9,7 @@ https://roodjinocherilus.github.io/Porfolio-mobile-version-skeleton/
 
 - HTML
 - CSS
+- SS
 
 
 To get a local copy up and running follow these simple example steps.
