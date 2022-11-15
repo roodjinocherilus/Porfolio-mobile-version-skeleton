@@ -42,7 +42,7 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #6070FF; /* Black background with opacity */
+  background-color: #6070ff; /* Black background with opacity */
   cursor: pointer; /* Add a pointer on hover */
   backdrop-filter: blur(10px);
   mix-blend-mode: multiply;
@@ -58,13 +58,27 @@ nav {
   top: 25%;
   left: 35%;
   color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   z-index: 3;
-} 
+}
 
 #text a {
   color: white;
+}
+
+.logo > li {
+  width: 30px;
+  margin: 1.2vh;
+}
+
+.project-stack > li {
+  float: left;
+  margin: 1vh;
+  background: #ebebff;
+  color: #6070ff;
+  padding: 0.5vh 1vh;
+  border-radius: 5%;
 }
 
 #text li {
@@ -105,11 +119,6 @@ h1 {
 .logo {
   margin-top: 1vh;
   display: flex;
-}
-
-.logo > li {
-  width: 30px;
-  margin: 1.2vh;
 }
 
 form > p {
@@ -154,15 +163,6 @@ form > p {
 .project-stack {
   width: 80%;
   margin-bottom: 3vh;
-}
-
-.project-stack > li {
-  float: left;
-  margin: 1vh;
-  background: #ebebff;
-  color: #6070ff;
-  padding: 0.5vh 1vh;
-  border-radius: 5%;
 }
 
 h2 {
