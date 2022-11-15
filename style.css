@@ -67,6 +67,14 @@ nav {
   color: white;
 }
 
+.menu {
+  border: none;
+}
+.menu:hover {
+  border: none;
+
+}
+
 .logo > li {
   width: 30px;
   margin: 1.2vh;
@@ -124,6 +132,10 @@ h1 {
 form > p {
   text-align: center;
   color: #fff;
+}
+
+.text {
+  margin-top: 10%;
 }
 
 .text > p {
@@ -200,7 +212,7 @@ h2 {
   flex-direction: column;
 }
 
-button {
+.btn {
   border: 1px solid #6070ff;
   background-color: white;
   border-radius: 10px;
@@ -238,17 +250,17 @@ button {
   font-size: 1.52em;
 }
 
-button:hover {
+.btn:hover {
   background-color: #6070ff;
   color: white;
 }
 
-button:active {
+.btn:active {
   background-color: #2230d2;
   color: white;
 }
 
-button:disabled {
+.btn:disabled {
   color: #5e6c84;
   border: 1px solid #5e6c84;
 }
@@ -351,7 +363,7 @@ form > textarea {
     margin: auto;
   }
 
-  button {
+  .btn {
     border: 1px solid #6070ff;
     background-color: white;
     border-radius: 10px;

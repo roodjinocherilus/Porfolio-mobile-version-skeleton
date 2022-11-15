@@ -19,7 +19,7 @@
                         
                         <li>
                             <ul class="nav-item"> 
-                                <div id="text">
+
                                     <li >
                                         <a href="#portfolio"> Portfolio </ahref=>
                                     </li> 
@@ -29,11 +29,11 @@
                                     <li >
                                         <a href="#contact"> Contact </a>
                                     </li>
-                                </div>
+                              
                             </ul>
                         </li> 
                         <li class="menu">
-                            <button onclick="on()">
+                            <button onclick="on()" class="menu">
                                 <img src="images/menu.svg" alt="menu">
                             </button> 
                         </li>
@@ -41,23 +41,20 @@
             </nav>
         </header>
 
-        <div>
-            <ul id="overlay" class="nav-item"> 
+        <div id="overlay">
+           
                 <div id="close-icon" class="close-icon" onclick="off()">
                     <img src="./images/cross_icon.png" alt="close mobile menu">
                 </div>
                 <div id="text">
-                    <li >
+                
                         <a onclick="off()" href="#portfolio"> Portfolio </a>
-                    </li> 
-                    <li>
+                
                         <a onclick="off()" href="#about"> About</a>
-                    </li>
-                    <li >
+        
                         <a onclick="off()" href="#contact"> Contact </a>
-                    </li>
+                
                 </div>
-            </ul>
         </div>
 
 
@@ -102,7 +99,7 @@
                         <li>CSS</li>
                         <li>JavaScript</li>
                     </ul>
-                    <a href="#"> <button type="button">See Project</button> </a>
+                    <a href="#"> <button class="btn" type="button">See Project</button> </a>
                 </div>
                 
             </div>
@@ -126,7 +123,7 @@
                         <span class="bullet"></span>
                         <li>JavaScript</li>
                     </ul>
-                    <a href="#"> <button type="button">See Project</button> </a>
+                    <a href="#"> <button class="btn" type="button">See Project</button> </a>
                 </div>
                 <div class="card-img card-img2">
                     <img src="images/portfolio2.png" alt="snapshoot">
@@ -154,7 +151,7 @@
                         <li>CSS</li>
                         <li>JavaScript</li>
                     </ul>
-                    <a href="#"> <button type="button">See Project</button> </a>
+                    <a href="#"> <button class="btn" type="button">See Project</button> </a>
                 </div>
                 
             </div>
@@ -176,7 +173,7 @@
                         <li>CSS</li>
                         <li>JavaScript</li>
                     </ul>
-                    <a href="#"> <button type="button">See Project</button> </a>
+                    <a href="#"> <button  class="btn" type="button">See Project</button> </a>
                 </div>
                 
 
@@ -204,7 +201,7 @@
                         <li> <a href="#"><img src="images/github.svg"> </a> </li>
                         <li> <a href="#"><img src="images/peace.svg"> </a></li>
                     </ul>
-                  <a href="#"><button type="button">Get my resume</button></a>
+                  <a href="#"><button class="btn" type="button">Get my resume</button></a>
                 </div>
             </div>
             <div class="about-stack">
@@ -240,7 +237,7 @@
             <input type="text" id="name" name="name" placeholder="Enter your Name" required minlength="2" maxlength="30">
                 <input type="email" id="email" placeholder="Enter your Email"  minlength="2" required >
                 <textarea name="textarea" id="message" placeholder="Write your Message here" required  minlength="2" maxlength="500"></textarea>
-                    <button class="btn-contact" type="submit" required>Get in touch</button>
+                    <button class="btn-contact btn" type="submit" required>Get in touch</button>
                     
         </form>
 
