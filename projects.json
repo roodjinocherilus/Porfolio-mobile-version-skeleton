@@ -6,7 +6,7 @@
         "projectInfo": ["Front End Dev", 2022],
         "image": "/images/portfolio1.png",
         "technologies": ["html", "css", "javaScript"],
-        "mainText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ex nulla, convallis vel purus at, aliquet eleifend risus. Nulla maximus dolor mattis, posuere lacus sit amet, facilisis lacus. Duis maximus.",
+        "mainText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ex nulla, convallis vel purus at, aliquet eleifend risus. Nulla maximus dolor mattis, posuere lacus sit amet, facilisis lacus. Duis maximus.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ex nulla, convallis vel purus at, aliquet eleifend risus. Nulla maximus dolor mattis, posuere lacus sit amet, facilisis lacus. Duis maximus.",
         "liveVersionLink": ["See Live", "www.google.com"],
         "linkToSource": ["See Source", "www.google.com"]
     },
