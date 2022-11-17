@@ -240,9 +240,9 @@ h2 {
   border: 1px solid #6070ff;
   background-color: white;
   border-radius: 10px;
-  padding: 2vh;
+  padding: 1.4vh;
   margin-top: 10px;
-  font-size: 1.8em;
+  font-size: 1.4em;
   color: #6070ff;
   text-decoration: none;
 }
@@ -664,5 +664,10 @@ form > textarea {
 
   .overlay_btn img {
     width: 20%;
+  }
+
+  .get-project {
+    margin: 0;
+    width: 50%;
   }
 }

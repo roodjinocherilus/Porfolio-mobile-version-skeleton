@@ -20,13 +20,13 @@ function projectOff() {
 function getProject(a) {
   projectOn();
   fetch('projects.json')
-  .then((res) => res.json())
-  .then((data) => {
-      output = `
+    .then((res) => res.json())
+    .then((data) => {
+      const output = `
    <div class="project_overlay">
     <div class="project_structure_overlay">
         <div> 
-            <button onclick="projectOff()" class="project_overlay_btn_close"> X </button>
+            <button class="project_overlay_btn_close"> X </button>
         </div>
         <div class="project_heading_overlay">
                 <h2 class="title_overlay"> ${data[a].name} </h2>
@@ -56,9 +56,12 @@ function getProject(a) {
         </div>
     
     </div>
-    </div>`; 
+    </div>`;
 
-    document.getElementById('output').innerHTML = output;
-});
+      document.getElementById('output').innerHTML = output;
+      document.querySelector('.project_overlay_btn_close').addEventListener('click', () => projectOff());
+    });
 }
-
+document.querySelectorAll('.get-project').forEach((item, index) => {
+  item.addEventListener('click', () => getProject(index));
+});
