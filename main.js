@@ -1,6 +1,4 @@
-
 /* Homepage Functions */
-
 function on() {
   document.getElementById('overlay').style.display = 'block';
 }
@@ -12,23 +10,17 @@ document.querySelector('.close-icon').addEventListener('click', () => off());
 document.querySelectorAll('.text-a').forEach((item) => {
   item.addEventListener('click', () => off());
 });
-
- 
- 
 /* Dynamic Project Functions */
 function projectOn() {
-  document.getElementById("output").style.display = "block";
+  document.getElementById('output').style.display = 'block';
 }
 
-function projectOff() {
-  document.getElementById("output").style.display = "none";
+  function projectOff() {
+  document.getElementById('output').style.display = 'none';
 }
-
-
-
 function getProject(a) {
     projectOn();
-fetch("projects.json")
+fetch('projects.json')
 .then((res) => res.json())
 .then((data) => {
    output = `
@@ -67,7 +59,7 @@ fetch("projects.json")
     </div>
     </div>`; 
 
-    document.getElementById("output").innerHTML = output;
+    document.getElementById('output').innerHTML = output;
 });
 }
 
