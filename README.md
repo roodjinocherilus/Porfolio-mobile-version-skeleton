@@ -9,6 +9,7 @@ https://roodjinocherilus.github.io/Porfolio-mobile-version-skeleton/
 
 - HTML
 - CSS
+- SS
 
 
 To get a local copy up and running follow these simple example steps.
@@ -47,6 +48,10 @@ Run npx stylelint "**/*.{css,scss}"
 👤 **Emmanuel Cortes**
 
 - GitHub: [@emmanuelcortes2](https://github.com/emmanuelcortes2)
+
+👤 **Giovanni Juliao**
+
+- GitHub: [@giovanni](https://github.com/gjuliao)
 
 ## Show your support
 

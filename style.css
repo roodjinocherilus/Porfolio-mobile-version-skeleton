@@ -7,6 +7,11 @@
   margin: 0;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+}
+
 body {
   font-family: Poppins, sans-serif;
   font-size: 16px;
@@ -31,6 +36,74 @@ nav {
   padding: 3vh;
 }
 
+/* Overlay */
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #6070ff; /* Black background with opacity */
+  cursor: pointer; /* Add a pointer on hover */
+  backdrop-filter: blur(10px);
+  mix-blend-mode: multiply;
+  opacity: 99%;
+}
+
+#text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  font-size: 35px;
+  top: 25%;
+  left: 35%;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+#text a {
+  color: white;
+}
+
+.menu {
+  border: none;
+}
+
+.menu:hover {
+  border: none;
+}
+
+.logo > li {
+  width: 30px;
+  margin: 1.2vh;
+}
+
+.project-stack > li {
+  float: left;
+  margin: 1vh;
+  background: #ebebff;
+  color: #6070ff;
+  padding: 0.5vh 1vh;
+  border-radius: 5%;
+}
+
+#text li {
+  margin-bottom: 5px;
+  z-index: 3;
+}
+
+.close-icon {
+  margin-top: 10%;
+  margin-left: 90%;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -39,7 +112,7 @@ nav {
 }
 
 .hero {
-  background-image: url("/images/header-bg.png");
+  background-image: url("./images/header-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -61,14 +134,13 @@ h1 {
   display: flex;
 }
 
-.logo > li {
-  width: 30px;
-  margin: 1.2vh;
-}
-
 form > p {
   text-align: center;
   color: #fff;
+}
+
+.text {
+  margin-top: 10%;
 }
 
 .text > p {
@@ -110,15 +182,6 @@ form > p {
   margin-bottom: 3vh;
 }
 
-.project-stack > li {
-  float: left;
-  margin: 1vh;
-  background: #ebebff;
-  color: #6070ff;
-  padding: 0.5vh 1vh;
-  border-radius: 5%;
-}
-
 h2 {
   font-size: 2em;
   line-height: 1.2em;
@@ -158,7 +221,7 @@ h2 {
   flex-direction: column;
 }
 
-button {
+.btn {
   border: 1px solid #6070ff;
   background-color: white;
   border-radius: 10px;
@@ -196,17 +259,17 @@ button {
   font-size: 1.52em;
 }
 
-button:hover {
+.btn:hover {
   background-color: #6070ff;
   color: white;
 }
 
-button:active {
+.btn:active {
   background-color: #2230d2;
   color: white;
 }
 
-button:disabled {
+.btn:disabled {
   color: #5e6c84;
   border: 1px solid #5e6c84;
 }
@@ -399,7 +462,7 @@ form > textarea {
     margin: auto;
   }
 
-  button {
+  .btn {
     border: 1px solid #6070ff;
     background-color: white;
     border-radius: 10px;

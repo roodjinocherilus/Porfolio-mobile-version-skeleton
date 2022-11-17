@@ -1,12 +1,20 @@
-/* Homepage Functions */
-function on() {
-    document.getElementById("overlay").style.display = "block";
-  }
-  
-  function off() {
-    document.getElementById("overlay").style.display = "none";
-  }
 
+/* Homepage Functions */
+
+function on() {
+  document.getElementById('overlay').style.display = 'block';
+}
+function off() {
+  document.getElementById('overlay').style.display = 'none';
+}
+document.querySelector('#menu').addEventListener('click', () => on());
+document.querySelector('.close-icon').addEventListener('click', () => off());
+document.querySelectorAll('.text-a').forEach((item) => {
+  item.addEventListener('click', () => off());
+});
+
+ 
+ 
   /* Dynamic Project Functions */
   function projectOn() {
     document.getElementById("output").style.display = "block";
@@ -62,3 +70,4 @@ fetch("projects.json")
     document.getElementById("output").innerHTML = output;
 });
 }
+
