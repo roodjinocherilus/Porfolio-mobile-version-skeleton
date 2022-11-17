@@ -14,16 +14,15 @@ document.querySelectorAll('.text-a').forEach((item) => {
 function projectOn() {
   document.getElementById('output').style.display = 'block';
 }
-
-  function projectOff() {
+function projectOff() {
   document.getElementById('output').style.display = 'none';
 }
 function getProject(a) {
-    projectOn();
-fetch('projects.json')
-.then((res) => res.json())
-.then((data) => {
-   output = `
+  projectOn();
+  fetch('projects.json')
+  .then((res) => res.json())
+  .then((data) => {
+      output = `
    <div class="project_overlay">
     <div class="project_structure_overlay">
         <div> 
