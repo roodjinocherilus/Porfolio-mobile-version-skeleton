@@ -33,7 +33,9 @@ fetch("projects.json")
                 <h2 class="title_overlay"> ${data[a].name} </h2>
                 <ul class="project_body_title_list">
                     <li class="title_list_main_overlay">${data[a].projectClient}</li>
+                    <span class="bullet bullet1"></span>
                     <li>${data[a].projectInfo[0]}</li>
+                    <span class="bullet bullet1"></span>
                     <li>${data[a].projectInfo[1]}</li>
                 </ul>
         </div>
