@@ -15,14 +15,14 @@ document.querySelectorAll('.text-a').forEach((item) => {
 
  
  
-  /* Dynamic Project Functions */
-  function projectOn() {
-    document.getElementById("output").style.display = "block";
-  }
+/* Dynamic Project Functions */
+function projectOn() {
+  document.getElementById("output").style.display = "block";
+}
 
-  function projectOff() {
-    document.getElementById("output").style.display = "none";
-  }
+function projectOff() {
+  document.getElementById("output").style.display = "none";
+}
 
 
 
