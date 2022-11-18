@@ -11,60 +11,19 @@ document.querySelectorAll('.text-a').forEach((item) => {
   item.addEventListener('click', () => off());
 });
 
-/* Dynawic Project Section */
-function getCard() {
-  let output2 = '';
-
+/* Dynamic Project Popup Functions */
+function projectOn() {
+  document.getElementById('output').style.display = 'block';
+}
+function projectOff() {
+  document.getElementById('output').style.display = 'none';
+}
+function getProject(pIndex) {
+  projectOn();
   fetch('projects.json')
     .then((res) => res.json())
     .then((data) => {
-      data.forEach((pIndex) => {
-        output2 += `
-      
-      <div id="portfolio" class="card-work">
-      <div class="card-img">
-          <img src="${pIndex.image}" alt="snapshoot">
-      </div>
-          
-      <div class="card-text">
-          <h2>${pIndex.name}</h2>
-          <ul class="project-details">
-              <li>${pIndex.projectClient}</li>
-              <span class="bullet"></span>
-              <li>${pIndex.projectInfo[0]}</li>
-              <span class="bullet"></span>
-              <li>${pIndex.projectInfo[1]}</li>
-          </ul>
-          <p>${pIndex.mainText}</p>
-          <ul class="project-stack">
-              <li>${pIndex.technologies[0]}</li>
-              <li>${pIndex.technologies[1]}</li>
-              <li>${pIndex.technologies[0]}</li>
-          </ul>
-          <button id="project-one" class="get-project btn" type="button">See Project</button>
-      </div>
-      
-  </div>`;
-        document.getElementById('output2').innerHTML = output2;
-        document.querySelectorAll('.get-project').forEach((item, index) => {
-          item.addEventListener('click', () => getProject(index));
-        });
-      });
-    });
-
-  /* Dynamic Project Popup Functions */
-  function projectOn() {
-    document.getElementById('output').style.display = 'block';
-  }
-  function projectOff() {
-    document.getElementById('output').style.display = 'none';
-  }
-  function getProject(pIndex) {
-    projectOn();
-    fetch('projects.json')
-      .then((res) => res.json())
-      .then((data) => {
-        const output = `
+      const output = `
    <div class="project_overlay">
     <div class="project_structure_overlay">
         <div> 
@@ -92,21 +51,59 @@ function getCard() {
                     <li>${data[pIndex].technologies[1]}</li>
                     <li>${data[pIndex].technologies[2]}</li>
                 </ul>
-                <button onclick=window.open(${data[pIndex].liveVersionLink[1]}) class="overlay_btn"> See Live <img src="./images/Icon_Export.png" > </button>
-                <button onclick=window.open(${data[pIndex].linkToSource[1]}) class="overlay_btn"> See Source <img src="./images/github_in_button.png" > </button>
+                <button onclick=window.open(${data[pIndex].liveVersionLink[1]}) class="overlay_btn btn"> <ul class="btn-popup"> <li> See Live </li> <li><img src="./images/Icon_Export.png" ></li> </ul>   </button>
+                <button onclick=window.open(${data[pIndex].linkToSource[1]}) class="overlay_btn btn"> <ul class="btn-popup"> <li> See Source </li> <li><img src="./images/github_in_button.png" ></li> </ul> </button>
             </div>
         </div>
     
     </div>
     </div>`;
 
-        document.getElementById('output').innerHTML = output;
-        document.querySelector('.project_overlay_btn_close').addEventListener('click', () => projectOff());
+      document.getElementById('output').innerHTML = output;
+      document.querySelector('.project_overlay_btn_close').addEventListener('click', () => projectOff());
+    });
+}
+
+/* Dynawic Project Section */
+function getCard() {
+  let output2 = '';
+
+  fetch('projects.json')
+    .then((res) => res.json())
+    .then((data) => {
+      data.forEach((pIndex) => {
+        output2 += `
+        
+        <div id="portfolio" class="card-work">
+        <div class="card-img">
+            <img src="${pIndex.image}" alt="snapshoot">
+        </div>
+            
+        <div class="card-text">
+            <h2>${pIndex.name}</h2>
+            <ul class="project-details">
+                <li>${pIndex.projectClient}</li>
+                <span class="bullet"></span>
+                <li>${pIndex.projectInfo[0]}</li>
+                <span class="bullet"></span>
+                <li>${pIndex.projectInfo[1]}</li>
+            </ul>
+            <p>${pIndex.mainText}</p>
+            <ul class="project-stack">
+                <li>${pIndex.technologies[0]}</li>
+                <li>${pIndex.technologies[1]}</li>
+                <li>${pIndex.technologies[0]}</li>
+            </ul>
+            <button id="project-one" class="get-project btn" type="button">See Project</button>
+        </div>
+        
+    </div>`;
+        document.getElementById('output2').innerHTML = output2;
+        document.querySelectorAll('.get-project').forEach((item, index) => {
+          item.addEventListener('click', () => getProject(index));
+        });
       });
-  }
- 
+    });
 }
 
 window.addEventListener('load', getCard());
-
-
