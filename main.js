@@ -107,3 +107,15 @@ function getCard() {
 }
 
 window.addEventListener('load', getCard());
+
+/* Form Validation */
+document.getElementById('contact-form').addEventListener('submit', (e) => {
+  const emailInput = document.getElementById('email-address');
+  const emailRegEx = /^[a-z0-9_.]+@[a-z0-9_.]+\.[a-z0-9_.]+/;
+  if (!emailRegEx.test(emailInput.value)) {
+    document.getElementById('error').innerText = "Note: Email Validation Error. Email must be in lower case Only.";
+    e.preventDefault();
+  } else {
+    form.submit();
+  }
+});
