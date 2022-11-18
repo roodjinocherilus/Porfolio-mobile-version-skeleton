@@ -120,3 +120,33 @@ document.getElementById('contact').addEventListener('submit', (e) => {
     form.submit();
   }
 });
+
+/* Local Storage */
+function saveData(){
+
+  let nameLocal = document.getElementById("full-name").value;
+  let emailLocal = document.getElementById("email-address").value;
+  let message = document.getElementById("message").value;
+
+  const personData = {
+    "name" : nameLocal,
+    "email" : emailLocal,
+    "message" : message
+  }
+
+  window.localStorage.setItem("personData", JSON.stringify(personData));
+  
+}
+
+/* Preview saved item in html when page Loads */
+window.addEventListener("load", () => {
+
+let personObj = window.localStorage.getItem("personData");
+
+personObj = JSON.parse(personObj);
+
+document.getElementById("full-name").value = personObj.name;
+document.getElementById("email-address").value = personObj.email;
+document.getElementById("message").value = personObj.message;
+
+}) 
