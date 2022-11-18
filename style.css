@@ -409,6 +409,12 @@ form > textarea {
   align-items: center;
 }
 
+#error {
+  color: white;
+  background-color: red;
+  padding: 5px;
+}
+
 @media screen and  (max-width: 991px) {
   .nav-item {
     display: none;
@@ -667,4 +673,5 @@ form > textarea {
     justify-content: space-between;
     align-items: center;
   }
+  
 }
