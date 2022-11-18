@@ -47,7 +47,6 @@ function getCard() {
   </div>`;
         document.getElementById('output2').innerHTML = output2;
         document.querySelectorAll('.get-project').forEach((item, index) => {
-          console.log('klik');
           item.addEventListener('click', () => getProject(index));
         });
       });
