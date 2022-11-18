@@ -94,6 +94,20 @@ nav {
   border-radius: 5%;
 }
 
+.project_tech_overlay li {
+  margin-right: 3%;
+  background-color: #ebebff;
+  color: #6070ff;
+  border-radius: 10px;
+  padding: 1% 2%;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+.project_body_title_list li {
+  margin-right: 3%;
+}
+
 #text li {
   margin-bottom: 5px;
   z-index: 3;
@@ -179,7 +193,7 @@ form > p {
 
 .project-stack {
   width: 80%;
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
 }
 
 h2 {
@@ -205,6 +219,11 @@ h2 {
   border-radius: 100%;
 }
 
+.bullet1 {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
 .card-text > p {
   color: #344563;
   margin-top: 15px;
@@ -221,9 +240,9 @@ h2 {
   border: 1px solid #6070ff;
   background-color: white;
   border-radius: 10px;
-  padding: 2vh;
+  padding: 1.4vh;
   margin-top: 10px;
-  font-size: 1.8em;
+  font-size: 1.4em;
   color: #6070ff;
   text-decoration: none;
 }
@@ -312,6 +331,84 @@ form > textarea {
   font-size: 1.2em;
 }
 
+/* Dynamic Project Cards */
+.project_overlay {
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #c1c7d0;
+}
+
+.title_overlay {
+  margin-top: -13%;
+  margin-bottom: 2%;
+}
+
+.title_list_main_overlay {
+  font-weight: bold;
+}
+
+.image_ovlerlay {
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+.text_group_overlay {
+  margin: 2% auto;
+  padding-bottom: 2%;
+}
+
+.project_structure_overlay {
+  padding: 1em;
+  margin: 5% auto;
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+
+.project_body_title_list {
+  display: flex;
+  margin-bottom: 3%;
+}
+
+.project_overlay_btn_close {
+  font-size: 1.5em;
+  margin-top: 5%;
+  margin-left: 95%;
+  color: royalblue;
+  background-color: white;
+  border: 0;
+}
+
+.project_tech_overlay {
+  display: flex;
+}
+
+.btn_group_overlay {
+  margin: 0 auto;
+}
+
+.overlay_btn {
+  font-size: 14px;
+  width: 35%;
+}
+
+.btn-popup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and  (max-width: 991px) {
   .nav-item {
     display: none;
@@ -339,6 +436,12 @@ form > textarea {
     margin-left: auto;
   }
 
+  .card-img {
+    min-width: 45%;
+    width: 100%;
+    height: auto;
+  }
+
   .text {
     margin-top: 200px;
     width: 70%;
@@ -359,11 +462,6 @@ form > textarea {
     gap: 20px;
   }
 
-  .card-img {
-    width: 100%;
-    height: auto;
-  }
-
   .card-text {
     margin: auto;
   }
@@ -379,10 +477,6 @@ form > textarea {
     text-decoration: none;
   }
 
-  .project-stack {
-    width: 80%;
-  }
-
   .project-stack > li {
     float: left;
     margin: 1vh;
@@ -391,14 +485,6 @@ form > textarea {
     color: #6070ff;
     padding: 0.5vh 1vh;
     border-radius: 5%;
-  }
-
-  .card-text2 {
-    grid-area: 1 / 1;
-  }
-
-  .card-img2 {
-    grid-area: 1 / 2;
   }
 
   .about {
@@ -470,5 +556,115 @@ form > textarea {
     height: 50px;
     width: 100%;
     margin: 30px 0;
+  }
+
+  /* Dynamic Project Cards Desktop Version */
+  .project_overlay {
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #bfc5cfd2;
+    z-index: 2;
+    cursor: pointer;
+    display: grid;
+    grid-template-areas:
+      "heading heading"
+      "img img"
+      "text buttons";
+  }
+
+  .project_structure_overlay {
+    padding: 3em;
+    margin: auto;
+  }
+
+  .project_heading_overlay {
+    margin-top: 2%;
+  }
+
+  .title_overlay {
+    margin-top: -4%;
+    margin-bottom: 2%;
+  }
+
+  .title_list_main_overlay {
+    font-weight: bold;
+  }
+
+  .image_ovlerlay {
+    margin-bottom: 2%;
+    width: 100%;
+  }
+
+  .project_body_overlay {
+    display: flex;
+    margin-top: 4%;
+  }
+
+  .text_group_overlay {
+    grid-area: text;
+    width: 70%;
+  }
+
+  .project_body_title_list {
+    display: flex;
+  }
+
+  .project_body_title_list li {
+    margin-right: 3%;
+  }
+
+  .project_overlay_btn_close {
+    font-size: 1.5em;
+    display: float;
+    float: right;
+    margin: 0;
+  }
+
+  .project_tech_overlay {
+    display: flex;
+    margin-bottom: 5%;
+  }
+
+  .project_tech_overlay li {
+    margin-right: 3%;
+    background-color: #ebebff;
+    color: #6070ff;
+    border-radius: 10px;
+    padding: 1% 2%;
+    margin-bottom: 5%;
+    margin-top: 3%;
+  }
+
+  .btn_group_overlay {
+    margin: 0 auto;
+    margin-left: 2%;
+    width: 40%;
+  }
+
+  .overlay_btn {
+    font-size: 14px;
+    width: 40%;
+    margin-left: 0 !important;
+  }
+
+  .overlay_btn img {
+    width: 100%;
+  }
+
+  .get-project {
+    margin: 0;
+    width: 30%;
+  }
+
+  .btn-popup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
