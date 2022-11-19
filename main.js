@@ -124,8 +124,8 @@ document.getElementById('contact').addEventListener('submit', (e) => {
 /* Local Storage */
 function saveData(){
 
-  let nameLocal = document.getElementById("full-name").value;
-  let emailLocal = document.getElementById("email-address").value;
+  let nameLocal = document.getElementById("name").value;
+  let emailLocal = document.getElementById("email").value;
   let message = document.getElementById("message").value;
 
   const personData = {
@@ -145,8 +145,14 @@ let personObj = window.localStorage.getItem("personData");
 
 personObj = JSON.parse(personObj);
 
-document.getElementById("full-name").value = personObj.name;
-document.getElementById("email-address").value = personObj.email;
+document.getElementById("name").value = personObj.name;
+document.getElementById("email").value = personObj.email;
 document.getElementById("message").value = personObj.message;
 
-}) 
+})
+
+document.querySelectorAll('.save').forEach((item) => {
+  item.addEventListener('keydown', () => saveData());
+});
+
+document.querySelector('.save-b').addEventListener('click', () => saveData());
