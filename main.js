@@ -120,3 +120,35 @@ document.getElementById('contact').addEventListener('submit', (e) => {
     form.submit();
   }
 });
+
+/* Local Storage */
+function saveData() {
+  const nameLocal = document.getElementById('name').value;
+  const emailLocal = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  const personData = {
+    name: nameLocal,
+    email: emailLocal,
+    message,
+  };
+
+  window.localStorage.setItem('personData', JSON.stringify(personData));
+}
+
+/* Preview saved item in html when page Loads */
+window.addEventListener('load', () => {
+  let personObj = window.localStorage.getItem('personData');
+
+  personObj = JSON.parse(personObj);
+
+  document.getElementById('name').value = personObj.name;
+  document.getElementById('email').value = personObj.email;
+  document.getElementById('message').value = personObj.message;
+});
+
+document.querySelectorAll('.save').forEach((item) => {
+  item.addEventListener('keydown', () => saveData());
+});
+
+document.querySelector('.save-b').addEventListener('click', () => saveData());
