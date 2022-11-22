@@ -427,7 +427,7 @@ form > textarea {
   }
 
   .hero {
-    background-image: url("/images/header-bg.png");
+    background-image: url("./images/header-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
