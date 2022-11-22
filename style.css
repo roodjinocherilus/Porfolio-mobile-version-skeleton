@@ -292,7 +292,7 @@ h2 {
 .form {
   background: #6070ff;
   border-top-left-radius: 75px;
-  background-image: url("/images/bg-shape-mob.svg");
+  background-image: url("./images/bg-shape-mob.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -414,12 +414,10 @@ form > textarea {
   background-color: red;
   padding: 5px;
 }
-
-@media screen and  (max-width: 991px) {
-  .nav-item {
+ .nav-item {
     display: none;
   }
-}
+
 
 @media screen and  (min-width: 992px) {
   .menu {
